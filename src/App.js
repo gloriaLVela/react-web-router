@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Vitamin from './components/Vitamin';
 import Navigation from './components/Navigation';
 
-// Test GitHub
+// Basic routing
 
 class App extends Component {
   constructor(props) {
