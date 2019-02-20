@@ -8,6 +8,9 @@ import Navigation from './components/Navigation';
 import ProductDetails from './components/ProductDetails';
 import Lost from './components/Lost';
 import data from './data/data.json';
+import Clothing from './components/Clothing';
+import Supplements from './components/Supplements';
+import Contact from './components/Contact';
 
 // Basic routing
 
@@ -67,6 +70,9 @@ class App extends Component {
               <Home cards={this.state.cards} />
             )} />
             <Route exact path="/vitamin" component={Vitamin} />
+            <Route exact path="/clothing" component={Clothing} />
+            <Route exact path="/supplements" component={Supplements} />
+            <Route exact path="/contact" component={Contact} />
             <Route exact path="/product/:id" render={(props) => {
               let cardPosition = props.location.pathname.replace('/product/', '');
               return (
